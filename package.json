@@ -1,0 +1,44 @@
+{
+    "name"            : "fuse-react-app",
+    "version"         : "5.0.0",
+    "private"         : true,
+    "dependencies"    : {
+        "@reduxjs/toolkit"            : "1.4.0",
+        "react"                       : "16.13.1",
+        "react-dom"                   : "16.13.1",
+        "react-redux"                 : "7.2.0",
+        "react-router"                : "5.2.0",
+        "react-router-config"         : "5.1.1",
+        "react-router-dom"            : "5.2.0",
+        "react-scripts"               : "3.4.1",
+        "redux"                       : "4.0.5",
+        "redux-logger"                : "4.0.0"
+    },
+    "resolutions"     : {
+        "react"           : "16.13.1",
+        "react-dom"       : "16.13.1",
+        "date-arithmetic" : "3.1.0",
+        "chalk"           : "2.4.2"
+    },
+    "devDependencies" : {
+        "@babel/core"                 : "7.10.4",
+        "@babel/node"                 : "7.10.4",
+        "@babel/preset-env"           : "7.10.4"
+    },
+    "scripts"         : {
+        "start"          : "react-scripts start",
+        "build"          : "react-scripts build"
+    },
+    "browserslist"    : {
+        "production"  : [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development" : [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

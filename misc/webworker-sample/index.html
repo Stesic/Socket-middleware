@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>test web worker</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Web-Worker Sample with Web-Socket</h1>
+        Url:<input type="text" id="url" name="url" value="wss://ws-client.stage.assembler.space" title="url" style="width:400px; margin:4px;">
+        <br>
+        <button id="connect"    onclick="startSocket(document.getElementById('url').value)">connect socket</button>
+        <button id="disconnect" onclick="stopSocket()">disconnect socket</button>
+        <hr>
+        <button id="init"       onclick='sendSocket( {"event": "/ce/echo/message","payload": [1,2,3,4]})'>send echo</button>
+        <button id="send"       onclick='sendSocket( {"event": "/ce/ping/message","payload": []})'>send ping</button>
+        <button id="sleep"      onclick='sendSocket( {"event": "/ce/XXXX/sleep"})'>send sleep</button>
+        <hr>
+        <br>
+        <div style="float:left;">
+            TextInfo
+            <button id="disconnect" onclick="document.getElementById('textinfo').value=''">clear</button>
+            <br>
+            <textarea id="textinfo" style="width:600px; height:600px"></textarea>
+        </div>
+        <div>
+            SocketInfo
+            <button id="disconnect" onclick="document.getElementById('socketinfo').value=''">clear</button>
+            <br>
+            <textarea id="socketinfo" style="width:600px; height:600px"></textarea>
+        </div>
+    </body>
+</html>
